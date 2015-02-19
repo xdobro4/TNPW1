@@ -1,0 +1,134 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6,
+ul, ol, dl,
+blockquote, p, address,
+table, fieldset,
+figure, pre {
+	margin-bottom: 24px;
+}
+
+ul, ol, dd {
+	margin-left: 48px;
+}
+
+html {
+	/*font: 300 100%/1.5 Ubuntu, sans-serif;*/
+	font-family: Georgia, serif;
+	background-color: #fff;
+	color: #444;
+}
+
+html,
+body {
+}
+
+body {
+	display: block;
+	background: rgba(255, 255, 255, 0);
+	margin: 8px;
+	padding: 50px;
+}
+
+.skeleton {
+	max-width: 900px;
+	margin: 10px auto;
+}
+
+div {
+	display: block;
+}
+
+a {
+	/*color: #1240AB;*/
+	text-decoration: none;
+}
+
+nav a {
+	text-transform: uppercase;
+	padding: 20px;
+	color: #999;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 50px;
+	display: inline-table;
+	width: 100%;
+}
+
+nav {
+	float: right;
+}
+
+nav a.active,
+nav a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+header ul {
+	margin-top: 20px;
+	/*display: block;*/
+}
+
+header ul li {
+	list-style: none;
+	display: inline-block;
+}
+
+header div {
+	/*display: inline-block;*/
+}
+
+/** LOGO **/
+div.logo {
+	float: left;
+	display: inline-block;
+}
+
+a.logo, a.logo:hover, a.logo:visited {
+	color: #888;
+	border: solid 5px;
+	padding: 2px 10px;
+	text-transform: lowercase;
+	text-decoration: none;
+	font: bold 46px Montserrat;
+}
+
+/** BODY */
+.content {
+	border-top: solid 1px grey;
+	padding-top: 50px;
+}
+
+/** PROJECT */
+.project {
+	clear: left;
+	width: 20%;
+	float: left;
+	margin: 10px;
+	position: relative;
+}
+
+.project:hover {
+}
+
+.project img {
+	width: 280px;
+}
+
+.project-image {
+	overflow: hidden;
+}
+
+.intrinsic {
+	overflow: hidden;
+	position: absolute;
+}
