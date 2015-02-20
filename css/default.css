@@ -106,29 +106,53 @@ a.logo, a.logo:hover, a.logo:visited {
 .content {
 	border-top: solid 1px grey;
 	padding-top: 50px;
+	position: relative;
+}
+
+.project {
+	width: 30%; /* 3 items per row */
+	float: left;
+	margin: 0 14px 50px 14px;
+}
+
+.project h2 {
+	text-align: center;
+	font-size: 17px;
+	padding-top: 5px;
 }
 
 /** PROJECT */
-.project {
-	clear: left;
-	width: 20%;
-	float: left;
-	margin: 10px;
-	position: relative;
+@media screen and ( max-width: 955px ) {
+	.project {
+		width: 46%; /* 2 items per row */
+	}
+}
+@media screen and ( max-width: 815px ) {
+	.project {
+		width: 44%;  /* 1 items per row */
+	}
+}
+@media screen and ( max-width: 585px ) {
+	.project {
+		width: 93%; /* 1 items per row */
+	}
 }
 
 .project:hover {
 }
 
 .project img {
-	width: 280px;
+	width: 100%;
+	height: auto;
 }
 
 .project-image {
-	overflow: hidden;
+	/*overflow: hidden;*/
+	width: 100%;
+	/*height: 100px;*/
 }
 
 .intrinsic {
-	overflow: hidden;
-	position: absolute;
+	/*overflow: hidden;*/
+	/*position: absolute;*/
 }
