@@ -15,14 +15,20 @@ figure, pre {
 }
 
 ul, ol, dd {
-	margin-left: 48px;
+	/*margin-left: 48px;*/
+}
+
+html, a {
+	color: #444;
 }
 
 html {
 	/*font: 300 100%/1.5 Ubuntu, sans-serif;*/
-	font-family: Georgia, serif;
+	/*font-family: Georgia, serif;*/
+	font-family: Montserrat, serif;
 	background-color: #fff;
 	color: #444;
+	min-width: 320px;
 }
 
 html,
@@ -52,19 +58,22 @@ a {
 
 nav a {
 	text-transform: uppercase;
-	padding: 20px;
 	color: #999;
+}
+
+nav li {
+	padding: 10px;
 }
 
 header {
 	text-align: center;
-	margin-bottom: 50px;
 	display: inline-table;
 	width: 100%;
 }
 
-nav {
+nav.menu {
 	float: right;
+	margin: 0;
 }
 
 nav a.active,
@@ -75,7 +84,6 @@ nav a:hover {
 
 header ul {
 	margin-top: 20px;
-	/*display: block;*/
 }
 
 header ul li {
@@ -104,38 +112,50 @@ a.logo, a.logo:hover, a.logo:visited {
 
 /** BODY */
 .content {
-	border-top: solid 1px grey;
+	border-top: dotted 1px grey;
+	border-bottom: dotted 1px grey;
 	padding-top: 50px;
 	position: relative;
+
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
+/** PROJECT */
 .project {
 	width: 30%; /* 3 items per row */
 	float: left;
 	margin: 0 14px 50px 14px;
+	overflow: hidden;
+
+	/*box-shadow: #000 0 0 1px;*/
+}
+
+.project .text {
 }
 
 .project h2 {
 	text-align: center;
-	font-size: 17px;
+	font-size: 110%;
 	padding-top: 5px;
+	color: black;
+	margin: 5px;
 }
 
-/** PROJECT */
-@media screen and ( max-width: 955px ) {
-	.project {
-		width: 46%; /* 2 items per row */
-	}
-}
-@media screen and ( max-width: 815px ) {
-	.project {
-		width: 44%;  /* 1 items per row */
-	}
-}
-@media screen and ( max-width: 585px ) {
-	.project {
-		width: 93%; /* 1 items per row */
-	}
+.project p {
+	padding: 20px;
+	font-family: Georgia, serif;
+	font-size: 80%;
+
+	background: #eeeeee;
+	height: 100%;
+	margin: 0;
+	/*margin-top: 5px;*/
 }
 
 .project:hover {
@@ -155,4 +175,62 @@ a.logo, a.logo:hover, a.logo:visited {
 .intrinsic {
 	/*overflow: hidden;*/
 	/*position: absolute;*/
+}
+
+footer {
+	margin: 0 auto;
+	max-width: 900px;
+	text-align: right;
+}
+
+footer a {
+	color: #444;
+}
+
+/** MOBILE */
+@media screen and (max-width: 780px) {
+
+	header {
+		margin-bottom: 0;
+	}
+
+	div.logo {
+		/*padding: 20px;*/
+		float: none;
+	}
+
+	nav.menu {
+		float: none;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	header {
+		margin-bottom: 50px;
+	}
+
+	nav.menu {
+		display: none;
+	}
+}
+
+@media screen and ( max-width: 955px ) {
+
+	.project {
+		width: 46%; /* 2 items per row */
+	}
+}
+
+@media screen and ( max-width: 815px ) {
+	.project {
+		width: 44%; /* 1 items per row */
+	}
+}
+
+@media screen and ( max-width: 585px ) {
+	.project {
+		width: 93%; /* 1 items per row */
+	}
 }
