@@ -42,8 +42,18 @@ body {
 	padding: 50px;
 }
 
+h1 {
+	width: 100%;
+}
+
 p{
 	/*font-family: Georgia, serif;*/
+	font-family: 'PT Serif', serif;
+	font-size: 80%;
+}
+
+.universal-list {
+	margin-left: 50px;
 	font-family: 'PT Serif', serif;
 	font-size: 80%;
 }
@@ -60,6 +70,10 @@ div {
 a {
 	/*color: #1240AB;*/
 	text-decoration: none;
+}
+
+.underline {
+	text-decoration: underline;
 }
 
 nav a {
@@ -162,7 +176,7 @@ footer a {
 
 @media screen and (max-width: 580px) {
 	body {
-		padding: 0;
+		padding: 10px;
 	}
 
 	header {
