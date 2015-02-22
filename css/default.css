@@ -42,6 +42,11 @@ body {
 	padding: 50px;
 }
 
+p{
+	font-family: Georgia, serif;
+	font-size: 80%;
+}
+
 .skeleton {
 	max-width: 900px;
 	margin: 10px auto;
@@ -150,8 +155,6 @@ a.logo, a.logo:hover, a.logo:visited {
 
 .project p {
 	padding: 20px;
-	font-family: Georgia, serif;
-	font-size: 80%;
 
 	background: #eeeeee;
 	/*height: 100%;*/
@@ -190,7 +193,7 @@ footer a {
 }
 
 /** MOBILE */
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 790px) {
 
 	header {
 		margin-bottom: 0;

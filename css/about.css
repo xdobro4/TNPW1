@@ -1,0 +1,32 @@
+.bio-image {
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(../img/bio-image.jpg) no-repeat;
+
+	float: left;
+	margin-right: 5%;
+}
+.bio {
+	width: 60%;
+	float: left;
+}
+
+.bio h1 {
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 790px) {
+	.bio-image {
+		margin: 0 auto 20px auto;
+		float: none;
+		/*margin-right: 0;*/
+	}
+
+	.bio {
+		width: 100%;
+		float: none;
+	}
+}
