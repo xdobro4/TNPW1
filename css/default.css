@@ -160,6 +160,10 @@ footer a {
 }
 
 @media screen and (max-width: 580px) {
+	body {
+		padding: 0;
+	}
+
 	header {
 		margin-bottom: 50px;
 	}
