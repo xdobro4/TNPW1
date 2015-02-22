@@ -91,7 +91,7 @@ header {
 	width: 100%;
 }
 
-nav.menu {
+nav {
 	float: right;
 	margin: 0;
 }
@@ -183,7 +183,7 @@ footer a {
 		margin-bottom: 50px;
 	}
 
-	nav.menu {
+	nav {
 		display: none;
 	}
 }
