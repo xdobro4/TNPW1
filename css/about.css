@@ -9,8 +9,9 @@
 	float: left;
 	margin-right: 5%;
 }
+
 .bio {
-	width: 60%;
+	width: 55%;
 	float: left;
 }
 
@@ -18,15 +19,32 @@
 	text-transform: uppercase;
 }
 
+@media screen and ( max-width: 875px ) {
+	.bio {
+		width: 45%;
+		float: none;
+	}
+}
+
 @media screen and (max-width: 790px) {
 	.bio-image {
 		margin: 0 auto 20px auto;
 		float: none;
-		/*margin-right: 0;*/
 	}
 
 	.bio {
 		width: 100%;
 		float: none;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.bio-image {
+		width: 200px;
+		height: 200px;
+		margin: 0 auto 20px auto;
+		float: none;
+		/*margin-right: 0;*/
+		background: url(../img/bio-image.jpg) 45% 15% no-repeat;
 	}
 }

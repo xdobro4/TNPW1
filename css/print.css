@@ -1,11 +1,7 @@
+/** BASE */
 html, body {
 	margin: 0;
 	padding: 0;
-}
-
-/** PROJECT */
-.project {
-	margin: 0 10px 10px 10px;
 }
 
 nav {
@@ -19,3 +15,24 @@ div.logo {
 .content {
 	border: none;
 }
+
+/** WORK */
+.project {
+	margin: 0 10px 10px 10px;
+}
+
+/** ABOUT */
+.bio-image {
+	margin: 0 auto;
+}
+
+.bio {
+	width: 100%;
+	margin-top: 20px;
+}
+
+/** CONTACT **/
+
+/** BLOG */
+
+/** ARTICLE */
