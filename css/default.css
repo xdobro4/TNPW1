@@ -98,7 +98,6 @@ header div {
 /** LOGO **/
 div.logo {
 	float: left;
-	display: inline-block;
 }
 
 a.logo, a.logo:hover, a.logo:visited {
@@ -236,5 +235,9 @@ footer a {
 	.project {
 		width: 93%; /* 1 items per row */
 		float: none;
+	}
+
+	a.logo, a.logo:hover, a.logo:visited {
+		font-size: 200%;
 	}
 }
