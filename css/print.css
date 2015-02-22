@@ -1,0 +1,21 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+/** PROJECT */
+.project {
+	margin: 0 10px 10px 10px;
+}
+
+nav {
+	display: none;
+}
+
+div.logo {
+	float: none;
+}
+
+.content {
+	border: none;
+}
