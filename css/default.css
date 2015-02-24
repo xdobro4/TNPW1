@@ -63,6 +63,17 @@ p {
 	margin: 10px auto;
 }
 
+.break {
+	float: none;
+	clear: both;
+	margin: 5px;
+	width: 100%;
+}
+
+.padding-clear {
+	margin: 0;
+}
+
 div {
 	display: block;
 }
