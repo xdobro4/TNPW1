@@ -105,7 +105,7 @@ nav {
 }
 
 #mobile-menu-links.active {
-	background: url("../img/mobile-menu.png") no-repeat;
+	background: url("../img/mobile-menu.png") no-repeat -12px;
 }
 
 nav a.active,
