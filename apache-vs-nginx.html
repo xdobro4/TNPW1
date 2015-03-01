@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>VHŘB | Why use https on your website?!</title>
+
+	<meta name="description" content="Why use https on your website?!">
+	<meta name="author" content="Michal Dobrovolný">
+
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+
+	<link href="css/default.css" rel="stylesheet" type="text/css" media="all">
+	<link href="css/print.css" rel="stylesheet" type="text/css" media="print">
+	<link href="css/blog.css" rel="stylesheet" type="text/css" media="all">
+
+	<script type="application/javascript" src="js/jquery.min.js"></script>
+	<script type="application/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="skeleton">
+	<header>
+		<div class="logo">
+			<a class="logo" href="index.html">vhrb.cz</a>
+		</div>
+		<span id="mobile-menu-links"></span>
+		<nav>
+			<ul>
+				<li><a href="index.html">work</a></li>
+				<li><a href="about.html">about</a></li>
+				<li><a href="contact.html">contact</a></li>
+				<li><a class="active" href="blog.html">blog</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="content" role="main">
+		<h1>Apache vs Nginx?!</h1>
+		<span class="date">2015-03-01 11:22 AM</span>
+
+		<h2>Target</h2>
+
+		<p class="fullwidth">&quot;Apache has longer history.&quot; &quot;Nginx is more stable.&quot; Then what is better? How make choice? Let us show differences.</p>
+
+		<h2>Benchmark</h2>
+
+		<p class="fullwidth">Server machine &amp; configurations</p>
+		<ul class="universal-list">
+			<li>CENTOS 5</li>
+			<li>Dual 2.4GHz Xeon CPUs</li>
+			<li>4GB RAM</li>
+			<li>RAID5</li>
+			<li>10/100 swtich</li>
+		</ul>
+		<ul class="universal-list">
+			<li>Static vhost</li>
+			<li>Keep alive on (15s)</li>
+			<li>GZIP on</li>
+		</ul>
+		<p class="fullwidth">For testing i used <a class="underline" href="http://www.xenoclast.org/autobench/">autobench</a>. How he is work you can read in documentation. That is not subject of this article. We will testing response on file /robots.txt. All requests are on the same file.</p>
+
+		<h3>Example script</h3>
+		<code lang="bash">httperf --timeout=5 --client=0/1 --server=HOST --port=80 --uri=/robots.txt --rate=X --send-buffer=4096 --recv-buffer=16384 --num-conns=5000 --num-calls=10</code>
+
+		<div class="text-img"><img src="img/apache-vs-nginx/rep-rate.jpg" width="500" height="293"></div>
+
+		<p class="fullwidth">This one really piqued my interest. It seems strange to me why we would see such a result from Apache. In both tests there was a big difference at the 700 request mark. Statistically the difference was only on the max reply rate. The average and minimum are within a few tenths of a percent consistent through the tests. The max for Apache in the first test was 734.7 and in the second 758.7, standard deviations of 13.9 and 22.9 respectively. I suppose the real question here is whether or not this is my test or how Apache acts. If it is the later it seems strange that dealing with 700 requests would be any different than dealing with 800. From 800 requests to 2000, the larger differences in these results seems more realistic, controlled and gradual.</p>
+
+		<div class="text-img"><img src="img/apache-vs-nginx/response-time.jpg" width="500" height="331"></div>
+
+		<p class="fullwidth">The response times are also interesting since Nginx responds consistently at 0.4 ms. I am not sure why this is since I don't know the internals to Nginx but I imagine that it is something that is built into how it deals with requests. While the httperf tests were running I collected sar data from that time.</p>
+
+
+		<h2>Compare of OS support</h2>
+		<table>
+			<thead>
+			<tr>
+				<td>OS</td>
+				<td>Apache</td>
+				<td>Nginx</td>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>Windows</td>
+				<td class="bg-green">Yes</td>
+				<td class="bg-green">Yes</td>
+			</tr>
+			<tr>
+				<td>Linux</td>
+				<td class="bg-green">Yes</td>
+				<td class="bg-green">Yes</td>
+			</tr>
+			<tr>
+				<td>OS X</td>
+				<td class="bg-green">Yes</td>
+				<td class="bg-green">Yes</td>
+			</tr>
+			<tr>
+				<td>BSD</td>
+				<td class="bg-green">Yes</td>
+				<td class="bg-green">Yes</td>
+			</tr>
+			<tr>
+				<td>Solaris</td>
+				<td class="bg-green">Yes</td>
+				<td class="bg-green">Yes</td>
+			</tr>
+			</tbody>
+		</table>
+
+		<h2>Result</h2>
+
+		<p class="fullwidth">
+			<a class="underline" href="http://nginx.org/">Nginx</a> / <a class="underline" href="http://www.apache.org/">Apache</a>. That decision is only on you.
+		</p>
+
+		<p class="fullwidth">Thank!</p>
+	</section>
+</div>
+
+<footer>
+	<span><a href="http://vhrb.cz" target="_blank">&copy; vhrb.cz</a></span>
+</footer>
+</body>
+</html>

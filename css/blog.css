@@ -1,0 +1,28 @@
+.blog article {
+	margin-bottom: 20px;
+
+	border-bottom: inset 1px;
+	width: 100%;
+}
+
+.date {
+	font-size: 70%;
+	margin-bottom: 15px;
+}
+
+table {
+	border: solid 1px #999999;
+	margin: 10px auto;
+	text-align: center;
+}
+thead td:first-of-type {
+	border-bottom: solid 1px #999999;
+	border-right: solid 1px #999999;
+}
+td {
+	width: 20%;
+}
+
+.bg-green {
+	background-color: yellowgreen;
+}
