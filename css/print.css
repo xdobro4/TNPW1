@@ -19,7 +19,6 @@ div.logo {
 	margin: 5px auto 0 auto;
 }
 
-
 /** WORK */
 .project {
 	margin: 0 10px 10px 10px;
@@ -36,6 +35,10 @@ div.logo {
 }
 
 /** CONTACT **/
+.google-maps {
+	display: none;
+	/*height: 100%;*/
+}
 
 /** BLOG */
 
