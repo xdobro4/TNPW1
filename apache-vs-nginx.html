@@ -45,7 +45,7 @@
 
 		<h2>Target</h2>
 
-		<p class="fullwidth">&quot;Apache has longer history.&quot; &quot;Nginx is more stable.&quot; Then what is better? How make choice? Let us show differences.</p>
+		<p class="fullwidth">&quot;Apache has longer history.&quot; &quot;Nginx is more stable.&quot; Then what is better? How to make choice? Let us show differences.</p>
 
 		<h2>Benchmark</h2>
 
@@ -62,7 +62,7 @@
 			<li>Keep alive on (15s)</li>
 			<li>GZIP on</li>
 		</ul>
-		<p class="fullwidth">For testing i used <a class="underline" href="http://www.xenoclast.org/autobench/">autobench</a>. How he is work you can read in documentation. That is not subject of this article. We will testing response on file /robots.txt. All requests are on the same file.</p>
+		<p class="fullwidth">For testing purposes I have used <a class="underline" href="http://www.xenoclast.org/autobench/">autobench</a>. The way he is working you can read in documentation. That is not subject of this article. We will test response on file /robots.txt. All requests are on the same file.</p>
 
 		<h3>Example script</h3>
 		<code lang="bash">httperf --timeout=5 --client=0/1 --server=HOST --port=80 --uri=/robots.txt --rate=X --send-buffer=4096 --recv-buffer=16384 --num-conns=5000 --num-calls=10</code>
@@ -73,7 +73,7 @@
 
 		<div class="text-img"><img src="img/apache-vs-nginx/response-time.jpg" width="500" height="331"></div>
 
-		<p class="fullwidth">The response times are also interesting since Nginx responds consistently at 0.4 ms. I am not sure why this is since I don't know the internals to Nginx but I imagine that it is something that is built into how it deals with requests. While the httperf tests were running I collected sar data from that time.</p>
+		<p class="fullwidth">I am not sure, what this caused. I don't know how Nginx works inside but I can imagine that it is something related in inner dealing with requests. While the httperf tests were running I collected data from that time.</p>
 
 
 		<h2>Compare of OS support</h2>
@@ -120,7 +120,7 @@
 			<a class="underline" href="http://nginx.org/">Nginx</a> / <a class="underline" href="http://www.apache.org/">Apache</a>. That decision is only on you.
 		</p>
 
-		<p class="fullwidth">Thank!</p>
+		<p class="fullwidth">Thanks!</p>
 	</section>
 </div>
 
