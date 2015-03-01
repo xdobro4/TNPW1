@@ -19,14 +19,14 @@
 }
 
 /** MOBILE */
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 800px) {
 	.google-maps {
 		height: 300px;
 	}
 
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 480px) {
 	.google-maps {
 		height: 200px;
 	}

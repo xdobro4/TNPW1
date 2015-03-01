@@ -179,7 +179,7 @@ footer a {
 }
 
 /** MOBILE */
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 800px) {
 
 	header {
 		margin-bottom: 0;
@@ -197,7 +197,7 @@ footer a {
 	}
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 320px) {
 	body {
 		padding: 10px;
 	}
@@ -220,7 +220,7 @@ footer a {
 	}
 }
 
-@media screen and ( max-width: 585px ) {
+@media screen and ( max-width: 480px ) {
 	a.logo, a.logo:hover, a.logo:visited {
 		font-size: 200%;
 	}

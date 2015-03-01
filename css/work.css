@@ -45,20 +45,13 @@
 	/*height: 100px;*/
 }
 
-@media screen and ( max-width: 955px ) {
-
+@media screen and ( max-width: 800px ) {
 	.project {
-		width: 46%; /* 2 items per row */
+		width: 44%; /* 2 items per row */
 	}
 }
 
-@media screen and ( max-width: 815px ) {
-	.project {
-		width: 44%; /* 1 items per row */
-	}
-}
-
-@media screen and ( max-width: 585px ) {
+@media screen and ( max-width: 480px ) {
 	.project {
 		width: 93%; /* 1 items per row */
 		float: none;

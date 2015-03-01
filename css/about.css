@@ -19,14 +19,7 @@
 	text-transform: uppercase;
 }
 
-@media screen and ( max-width: 875px ) {
-	.bio {
-		width: 45%;
-		float: none;
-	}
-}
-
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 800px) {
 	.bio-image {
 		margin: 0 auto 20px auto;
 		float: none;
@@ -38,7 +31,7 @@
 	}
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 480px) {
 	.bio-image {
 		width: 200px;
 		height: 200px;
