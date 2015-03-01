@@ -42,20 +42,28 @@ body {
 	padding: 50px;
 }
 
-h1 {
+h1, h2 {
 	width: 100%;
+}
+
+h1 {
+	font-size: 150%;
+}
+
+h2 {
+	font-size: 120%;
 }
 
 p {
 	/*font-family: Georgia, serif;*/
 	font-family: 'PT Serif', serif;
-	font-size: 80%;
+	font-size: 90%;
 }
 
 .universal-list {
 	margin-left: 50px;
 	font-family: 'PT Serif', serif;
-	font-size: 80%;
+	font-size: 90%;
 }
 
 .skeleton {
@@ -83,8 +91,9 @@ a {
 	text-decoration: none;
 }
 
-.underline {
+a.underline {
 	text-decoration: underline;
+	font-weight: 600;
 }
 
 nav a {
@@ -166,6 +175,10 @@ a.logo, a.logo:hover, a.logo:visited {
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+}
+
+.fullwidth {
+	width: 100%;
 }
 
 footer {
