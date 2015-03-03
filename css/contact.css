@@ -1,7 +1,7 @@
 
 .google-maps {
 	position: relative;
-	padding-bottom: 75%;
+	/*padding-bottom: 75px;*/
 	overflow: hidden;
 	width: 100%;
 	display: block;
@@ -10,6 +10,7 @@
 
 .google-maps iframe {
 	width: 100%;
+	border:0;
 	/*height: 100%;*/
 }
 
