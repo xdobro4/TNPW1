@@ -203,6 +203,10 @@ footer a {
 	color: #444;
 }
 
+code {
+	font-family: monospace;
+}
+
 /** MOBILE */
 @media screen and (max-width: 800px) {
 

@@ -65,7 +65,7 @@
 		<p class="fullwidth">For testing purposes I have used <a class="underline" href="http://www.xenoclast.org/autobench/">autobench</a>. The way he is working you can read in documentation. That is not subject of this article. We will test response on file /robots.txt. All requests are on the same file.</p>
 
 		<h3>Example script</h3>
-		<code lang="bash">httperf --timeout=5 --client=0/1 --server=HOST --port=80 --uri=/robots.txt --rate=X --send-buffer=4096 --recv-buffer=16384 --num-conns=5000 --num-calls=10</code>
+		<code>httperf --timeout=5 --client=0/1 --server=HOST --port=80 --uri=/robots.txt --rate=X --send-buffer=4096 --recv-buffer=16384 --num-conns=5000 --num-calls=10</code>
 
 		<div class="text-img"><img src="img/apache-vs-nginx/rep-rate.jpg" width="500" height="293" alt="Reply rate apache vs nginx"></div>
 
