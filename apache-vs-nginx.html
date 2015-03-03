@@ -67,11 +67,11 @@
 		<h3>Example script</h3>
 		<code lang="bash">httperf --timeout=5 --client=0/1 --server=HOST --port=80 --uri=/robots.txt --rate=X --send-buffer=4096 --recv-buffer=16384 --num-conns=5000 --num-calls=10</code>
 
-		<div class="text-img"><img src="img/apache-vs-nginx/rep-rate.jpg" width="500" height="293"></div>
+		<div class="text-img"><img src="img/apache-vs-nginx/rep-rate.jpg" width="500" height="293" alt="Reply rate apache vs nginx"></div>
 
 		<p class="fullwidth">This one really piqued my interest. It seems strange to me why we would see such a result from Apache. In both tests there was a big difference at the 700 request mark. Statistically the difference was only on the max reply rate. The average and minimum are within a few tenths of a percent consistent through the tests. The max for Apache in the first test was 734.7 and in the second 758.7, standard deviations of 13.9 and 22.9 respectively. I suppose the real question here is whether or not this is my test or how Apache acts. If it is the later it seems strange that dealing with 700 requests would be any different than dealing with 800. From 800 requests to 2000, the larger differences in these results seems more realistic, controlled and gradual.</p>
 
-		<div class="text-img"><img src="img/apache-vs-nginx/response-time.jpg" width="500" height="331"></div>
+		<div class="text-img"><img src="img/apache-vs-nginx/response-time.jpg" width="500" height="331" alt="Response time apache vs nginx"></div>
 
 		<p class="fullwidth">I am not sure, what this caused. I don't know how Nginx works inside but I can imagine that it is something related in inner dealing with requests. While the httperf tests were running I collected data from that time.</p>
 
